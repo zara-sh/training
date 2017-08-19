@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <h1>Bootstrap world!</h1>
+
+    <!-- gird system in Bootstrap -->
+    <h1>1-gird system in Bootstrap</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"> first colume</div>
+        <div class="col-md-6"> second colume</div>
+      </div>
+    </div>
+
+<p>-----------------------------<br></p>
+<h1>2-Navbar in Bootstrp</h1>
+<!-- Navbar in Bootstrp -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<p>---------------------------------------------<br></p>
+<!-- tables and forms  -->
+<!-- with out bootstrap -->
+<h1>3-tables and forms</h1>
+<h2>without bootstrap</h2>
+<form>
+  
+  Email:<input type="" name="">
+  <input type="submit" >
+</form>
+
+<table>
+  <tr>
+    <td>name</td>
+    <td>age</td>
+    <td>sex</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>age</td>
+    <td>sex</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>age</td>
+    <td>sex</td>
+  </tr>
+</table>  
+<p>---------------------------------------------<br></p> 
+<!-- forms with Bootstrap -->
+<h2> with Bootstrap</h2>
+
+<!-- the most important parts are classes this classes make all changes you want -->
+<div class="container">
+<form >
+
+  <div class="form-group row">
+    <label for="email" class="col-2 col-form-label"> Email address</label>
+    <input type="email" class="col-10 form-control" placeholder="Enter email">  
+  </div>
+
+  <div class="form-group row"> 
+    <label for="password" class="col-2">Password</label>
+    <input type="password" class=" col-10 form-control" placeholder="Password">
+  </div> 
+
+  <fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+</div>
+
+<!-- table with Bootsrap -->
+<!-- the main differnce between the table with bootsrap and without is <table class="table">
+if you put class="table to the previouse one it will change to bootsrap form too" -->
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>---------------------------<b></b></p>
+<!-- bootstap component we usslly out this at hte top of the page -->
+<h1>4-jumbotron</h1>
+<div class="jumbotron">
+  <h1 class="display-3">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+
+<p>---------------------------------- <b></b></p>
+<!-- alert -->
+<h1>5- alert</h1>
+<div class="alert alert-success" role="alert">
+  <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
+
+<p>-----------------------------------<b></b></p>
+<progress value="50" max="100" class="progress progress-bar bg-success" style="width: 100%" > 50%</progress>
+
+
+<p>------------------------------------<b></b></p>
+<h1>6-progress bar</h1>
+  <div class="row">
+  <div class="container col-sm-4 card-block">
+  <div class="card " style="width: 20rem;">
+  <img class="card-img-top" src="bag.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+ <div class="container col-sm-4 card-block">
+  <div class="card " style="width: 20rem;">
+  <img class="card-img-top" src="bag.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+ <div class="container col-sm-4 card-block">
+  <div class="card " style="width: 20rem;">
+  <img class="card-img-top" src="bag.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+<p>----------------------------------------<b></b></p>
+<!-- Large modal -->
+<div class="container">
+<button  class="btn btn-primary" data-toggle="modal" href="#myModal">Launch Modal</button>
+
+
+<div class="modal fade" id="myModal"><!-- note the use of "hide" class -->
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button href="#" class="btn btn-secondary" data-dismiss="modal">Close</button><!-- note the use of "data-dismiss" -->
+    <button href="#" class="btn btn-primary">Save changes</button>
+  </div>
+</div>​
+</div>
+
+
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+
+<!-- <div class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div -->>
+<!-- </div> -->
+
+<!-- <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" data-name ="Ali">Email Ali</button>
+
+<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" data-name="Ahmad">Email Ahamd</button>
+
+<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" data-name="Zara">Email Zara</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      
+// $('#modal').on('show.bs.modal', function (event) {
+//   var button = $(event.relatedTarget) // Button that triggered the modal
+//   var recipient = button.data('name')
+//   alert(recipient) // 
+//   var modal = $(this)
+//   modal.find('.modal-title').text('New message to ' + recipient)
+ 
+
+    </script>
+
+
+  </body>
+</html>
