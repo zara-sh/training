@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - A Pen by  zara</title>
+  
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <style>
+      body {
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Cormorant Garamond', serif;
+background-image: url(https://subtlepatterns.com/patterns/kindajean.png);
+margin-top : 50px;
+font-size :18px  ; 
+ }
+
+.box {
+  width : 500px;
+  higth : 600px;
+  background-color : white;
+  margin :auto;
+  font-family: 'Dancing Script', cursive;
+  font-size : 25px;
+ box-shadow: -3px 3px 3px #888888;
+ border-radius: 10px
+}
+.btn{
+ margin : 10px;
+ box-shadow: -1px 1px 1px #888888;
+ background-color : #C2C49B
+
+}
+
+    </style>
+
+  
+  
+  
+  
+</head>
+
+<body translate="no" >
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script|Lobster|Pacifico" rel="stylesheet">
+<body>
+  <div class="container text-center">
+    <h1 >Random Quotes</h1>
+    <p >These are some of my favorite quotes I collected, hope you enjoy them.</p>
+    <button class = "btn btn-primary:hover"> <strong>New Quotes</strong></button>
+    <div class= " text-center box"> <p class = "text">Cynicism is not realistic and tough. It's unrealistic and kind of cowardly because it means you don't have to try.</p></div>
+  </div>
+ 
+  
+</body>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script>
+    obj= { 
+        Q1 : "You can pretend to be serious; you can't pretend to be witty. Sacha Guitry (1885 - 1957)",
+        Q2 : "Statistics: The only science that enables different experts using the same figures to draw different conclusions. Evan Esar (1899 - 1995)",
+        Q3 : "Shut out all of your past except that which will help you weather your tomorrows. Sir William Osler (1849 - 1919)",
+        Q4 : "An expert is a person who avoids small error as he sweeps on to the grand fallacy. Benjamin Stolberg",
+        Q5 : "The Constitution gives every American the inalienable right to make a damn fool of himself. John Ciardi (1916 - 1986)",
+  Q6:"Everything we do is designed, whether we're producing a magazine, a website, or a bridge. Design is really the creative invention that designs everything. Henry Petroski",
+  Q7:"Do good regardless if people will know you did it or not. Julia Broderick",
+}
+arrayOfValue =Object.values(obj)
+$(".btn").click(function(){
+  var randQ = Math.floor((Math.random() * arrayOfValue.length) + 1);
+ $(".text").html(arrayOfValue[randQ]) 
+})
+  </script>
+
+  
+  
+
+</body>
+</html>
+ 
