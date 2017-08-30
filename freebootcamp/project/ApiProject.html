@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - A Pen by  zara</title>
+  
+  
+  
+  
+      <style>
+      #map {
+  height:400px;
+  width:100%
+}
+    </style>  
+  
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var options = {
+          zoom: 8,
+          center : { 
+            lat: 35.6895,
+            lng: 139.6917,
+          }
+        }
+        var map = new google.maps.Map(document.getElementById('map'),options);
+        // listen for click map
+        google.maps.event.addListener(map,'click',
+          function(event){
+            // Add marker
+            addMarker({coords:event.latLng});
+        })
+
+
+        var positions = {
+          map: map,
+          position:options.center,
+          title: 'Hello World!'
+        }
+        var marker = new google.maps.Marker(positions);
+
+
+        addMarker({coords:{ 
+            lat: 35.7356,
+            lng: 139.6517,
+          }});
+        function addMarker(props){
+           var marker = new google.maps.Marker({
+          map: map,
+          position:props.coords,
+          title: 'Hello World!',
+        });
+        }
+
+
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo9m95x_dr1nJvEEex9VenyW4ceTf8RyQ&callback=initMap"
+    async defer></script>
+  </body>
+</html>
